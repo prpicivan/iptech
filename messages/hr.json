@@ -1,0 +1,94 @@
+{
+    "Metadata": {
+        "title": "IP Technology | INOVIRAJ. OPTIMIZIRAJ. FUTURE-PROOF.",
+        "description": "Tehnološka rješenja nove generacije za vaše poslovanje. Specijalizirani za poslovno savjetovanje, upravljanje računima i upravljanje projektima."
+    },
+    "Navbar": {
+        "home": "Početna",
+        "services": "Usluge",
+        "about": "O nama",
+        "contact": "Kontakt",
+        "contactNow": "Javite se"
+    },
+    "Hero": {
+        "welcome": "Dobrodošli u IP Technology",
+        "title1": "INOVIRAJ.",
+        "title2": "OPTIMIZIRAJ.",
+        "title3": "FUTURE-PROOF.",
+        "description": "Vaš strateški partner za tehnološka rješenja nove generacije. Pomažemo tvrtkama u navigaciji digitalnim krajolikom stručnošću i vizijom.",
+        "getStarted": "Započnimo",
+        "learnMore": "Saznaj više",
+        "stats": {
+            "experience": "Godina iskustva",
+            "clients": "Zadovoljnih klijenata",
+            "projects": "Uspješnih projekata",
+            "contracts": "Ugovora"
+        }
+    },
+    "Services": {
+        "badge": "Naša stručnost",
+        "title": "Rješenja koja su",
+        "titleAccent": "bitna.",
+        "items": {
+            "consulting": {
+                "title": "Poslovno savjetovanje",
+                "description": "Maksimiziranje učinkovitosti novim procesima i priznatim najboljim praksama."
+            },
+            "development": {
+                "title": "Poslovni razvoj",
+                "description": "Usluge razvoja za postojeće i potencijalne klijente ili partnere."
+            },
+            "account": {
+                "title": "Upravljanje ključnim kupcima",
+                "description": "Stručno upravljanje računima, s fokusom na upsell i cross-sell rast."
+            },
+            "contracts": {
+                "title": "Upravljanje ugovorima",
+                "description": "Upravljanje ugovorima, izrada predložaka, praćenje i kreiranje KPI-jeva."
+            },
+            "selling": {
+                "title": "Prodaja rješenja",
+                "description": "Razumijevanje postojećih rješenja i pružanje dodane vrijednosti klijentima."
+            },
+            "governance": {
+                "title": "Project Governance",
+                "description": "Identificiranje ključnih dionika i procesa potrebnih za uspješnu implementaciju."
+            }
+        }
+    },
+    "About": {
+        "badge": "Naša priča",
+        "title": "Iskustvo susreće",
+        "titleAccent": "inovaciju.",
+        "mission": "\"Nema glupih pitanja. Postavljanjem pitanja ljudi počinju stvarati svijest o određenoj temi. Stvaranjem svijesti, tema se može adresirati na ispravan način. Naša najveća snaga je biti neupućen i postavljati onoliko pitanja koliko je potrebno za stvaranje svijesti.\"",
+        "author": "IP Technology Misija"
+    },
+    "Contact": {
+        "badge": "Kontaktirajte nas",
+        "title": "Gradimo budućnost",
+        "titleAccent": "zajedno.",
+        "description": "Spremni za podizanje poslovanja na višu razinu? Naš tim je spreman pomoći vam u vašem sljedećem velikom iskoraku.",
+        "form": {
+            "fullName": "Ime i prezime",
+            "fullNamePlaceholder": "Ivan Horvat",
+            "email": "E-mail adresa",
+            "emailPlaceholder": "ivan@primjer.hr",
+            "subject": "Predmet",
+            "subjectPlaceholder": "Kako vam možemo pomoći?",
+            "message": "Poruka",
+            "messagePlaceholder": "Vaša poruka nam je važna...",
+            "send": "Pošalji poruku"
+        }
+    },
+    "Footer": {
+        "description": "Osnaživanje poslovanja putem vrhunske tehnologije i strateškog savjetovanja. Izgrađeno za budućnost, isporučeno danas.",
+        "navigation": "Navigacija",
+        "legal": "Pravne informacije",
+        "companyName": "IP Tehnologije",
+        "companyType": "Obrt za računalne djelatnosti",
+        "oib": "OIB: 30160453873",
+        "owner": "Vlasnik: Ivan Prpić",
+        "rights": "Sva prava pridržana.",
+        "designedIn": "Dizajnirano s izvrsnošću u Zagrebu, Hrvatska."
+    }
+}

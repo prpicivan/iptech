@@ -6,14 +6,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
-];
+import { useTranslations } from "next-intl";
+
+const NavLinks = () => {
+    const t = useTranslations("Navbar");
+    return [
+        { name: t("home"), href: "/" },
+        { name: t("services"), href: "#services" },
+        { name: t("about"), href: "#about" },
+        { name: t("contact"), href: "#contact" },
+    ];
+};
 
 export const Navbar = () => {
+    const t = useTranslations("Navbar");
+    const navLinks = NavLinks();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -55,7 +62,7 @@ export const Navbar = () => {
                         href="#contact"
                         className="px-5 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:glow transition-all"
                     >
-                        Contact Now
+                        {t("contactNow")}
                     </Link>
                 </div>
 
@@ -92,7 +99,7 @@ export const Navbar = () => {
                             className="px-8 py-3 bg-primary text-white rounded-full text-lg font-bold"
                             onClick={() => setIsOpen(false)}
                         >
-                            Contact Now
+                            {t("contactNow")}
                         </Link>
                     </motion.div>
                 )}

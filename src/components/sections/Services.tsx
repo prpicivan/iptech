@@ -12,61 +12,68 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const services = [
-    {
-        title: "Business Consulting",
-        icon: Users,
-        description: "Maximizing efficiency with new processes and recognized best practices.",
-        color: "text-cyan-400",
-        bg: "bg-cyan-400/10",
-    },
-    {
-        title: "Business Development",
-        icon: TrendingUp,
-        description: "Development services for existing and potential Clients or Partners.",
-        color: "text-violet-400",
-        bg: "bg-violet-400/10",
-    },
-    {
-        title: "Account Management",
-        icon: Settings,
-        description: "Expert management of Accounts, focusing on upsell and cross-sell growth.",
-        color: "text-blue-400",
-        bg: "bg-blue-400/10",
-    },
-    {
-        title: "Contract Management",
-        icon: FileText,
-        description: "Managing contracts, creating templates, monitoring, and KPI creation.",
-        color: "text-emerald-400",
-        bg: "bg-emerald-400/10",
-    },
-    {
-        title: "Solution Selling",
-        icon: Zap,
-        description: "Understanding existing solutions and providing added value to Accounts.",
-        color: "text-amber-400",
-        bg: "bg-amber-400/10",
-    },
-    {
-        title: "Project Governance",
-        icon: ShieldCheck,
-        description: "Identifying key stakeholders and processes needed for successful implementation.",
-        color: "text-rose-400",
-        bg: "bg-rose-400/10",
-    },
-];
+import { useTranslations } from "next-intl";
+
+const ServicesList = () => {
+    const t = useTranslations("Services");
+    return [
+        {
+            title: t("items.consulting.title"),
+            icon: Users,
+            description: t("items.consulting.description"),
+            color: "text-cyan-400",
+            bg: "bg-cyan-400/10",
+        },
+        {
+            title: t("items.development.title"),
+            icon: TrendingUp,
+            description: t("items.development.description"),
+            color: "text-violet-400",
+            bg: "bg-violet-400/10",
+        },
+        {
+            title: t("items.account.title"),
+            icon: Settings,
+            description: t("items.account.description"),
+            color: "text-blue-400",
+            bg: "bg-blue-400/10",
+        },
+        {
+            title: t("items.contracts.title"),
+            icon: FileText,
+            description: t("items.contracts.description"),
+            color: "text-emerald-400",
+            bg: "bg-emerald-400/10",
+        },
+        {
+            title: t("items.selling.title"),
+            icon: Zap,
+            description: t("items.selling.description"),
+            color: "text-amber-400",
+            bg: "bg-amber-400/10",
+        },
+        {
+            title: t("items.governance.title"),
+            icon: ShieldCheck,
+            description: t("items.governance.description"),
+            color: "text-rose-400",
+            bg: "bg-rose-400/10",
+        },
+    ];
+};
 
 export const Services = () => {
+    const t = useTranslations("Services");
+    const services = ServicesList();
     return (
         <section id="services" className="py-24 bg-dark relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-primary font-bold tracking-widest uppercase mb-4">
-                        Our Expertise
+                        {t("badge")}
                     </h2>
                     <h3 className="text-4xl md:text-5xl font-black text-white">
-                        Solutions That <span className="gradient-text">Matter.</span>
+                        {t("title")} <span className="gradient-text">{t("titleAccent")}</span>
                     </h3>
                 </div>
 

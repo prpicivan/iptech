@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const Contact = () => {
+    const t = useTranslations("Contact");
     return (
         <section id="contact" className="py-24 bg-dark relative border-t border-white/5">
             <div className="max-w-7xl mx-auto px-6">
@@ -12,15 +13,14 @@ export const Contact = () => {
                     {/* Contact Info */}
                     <div>
                         <h2 className="text-primary font-bold tracking-widest uppercase mb-4">
-                            Get In Touch
+                            {t("badge")}
                         </h2>
                         <h3 className="text-4xl md:text-5xl font-black text-white mb-8">
-                            Let's Build the <br />
-                            <span className="gradient-text">Future Together.</span>
+                            {t("title")} <br />
+                            <span className="gradient-text">{t("titleAccent")}</span>
                         </h3>
                         <p className="text-slate-400 text-lg mb-12 max-w-md">
-                            Ready to take your business to the next level? Our team is standing
-                            by to help you navigate your next big breakthrough.
+                            {t("description")}
                         </p>
 
                         <div className="space-y-6">
@@ -57,40 +57,40 @@ export const Contact = () => {
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-semibold text-slate-400 px-1">Full Name</label>
+                                    <label className="text-sm font-semibold text-slate-400 px-1">{t("form.fullName")}</label>
                                     <input
                                         type="text"
-                                        placeholder="John Doe"
+                                        placeholder={t("form.fullNamePlaceholder")}
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 transition-all text-white"
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-semibold text-slate-400 px-1">Email Address</label>
+                                    <label className="text-sm font-semibold text-slate-400 px-1">{t("form.email")}</label>
                                     <input
                                         type="email"
-                                        placeholder="john@example.com"
+                                        placeholder={t("form.emailPlaceholder")}
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 transition-all text-white"
                                     />
                                 </div>
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-semibold text-slate-400 px-1">Subject</label>
+                                <label className="text-sm font-semibold text-slate-400 px-1">{t("form.subject")}</label>
                                 <input
                                     type="text"
-                                    placeholder="How can we help?"
+                                    placeholder={t("form.subjectPlaceholder")}
                                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 transition-all text-white"
                                 />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-semibold text-slate-400 px-1">Message</label>
+                                <label className="text-sm font-semibold text-slate-400 px-1">{t("form.message")}</label>
                                 <textarea
                                     rows={4}
-                                    placeholder="Your message matters to us..."
+                                    placeholder={t("form.messagePlaceholder")}
                                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 transition-all text-white resize-none"
                                 />
                             </div>
                             <button className="w-full py-4 bg-primary text-white rounded-2xl font-bold text-lg hover:glow transition-all">
-                                Send Message
+                                {t("form.send")}
                             </button>
                         </form>
                     </motion.div>
